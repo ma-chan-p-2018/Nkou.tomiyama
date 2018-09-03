@@ -33,7 +33,7 @@
       navBox.hide();
 
       // 表示を開始するスクロール量を設定(px)
-      var TargetPos = 72;
+      var TargetPos = 235;
 
       // スクロールされた際に実行
       $(window).scroll( function() {
@@ -63,14 +63,25 @@
 
     <nav id="globalNaviScroll">
       <div class="scrollDetail">
-        <img src="img/header_mainlogo_pc01.png" alt="" width="170" height="">
-        <img src="img/header_tel01.png" alt="">
 
-        <p>受付時間</p>
-        <p>平日9:30〜20:00</p>
+        <div class="scrollTitle">
+          <img src="img/header_mainlogo_pc01.png" alt="" width="170" height="36">
+        </div>
 
-        <p><a href="">説明会</a></p>
-        <p><a href="">資料請求</a></p>
+        <div class="scrollRight">
+          <div class="scrollTel">
+            <img src="img/header_tel01.png" alt="" width="190" height="33">
+
+            <p>受付時間<br>
+            平日9：30〜20：00</p>
+          </div>
+
+          <div class="scrollContact">
+            <p><a href="">説明会・相談会</a></p>
+            <p><a href="">資料請求</a></p>
+          </div>
+        </div>
+
       </div>
     </nav>
 

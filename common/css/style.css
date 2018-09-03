@@ -343,8 +343,107 @@ img {
 #headMenu .headMenuBottom .globalNavi ul a span:hover {
   background-position: 0 -10px;
 }
+
+
 /* 上部固定グローバルナビ */
 
+#page #globalNaviScroll {
+   /* ▼上端に固定するCSS */
+   position: fixed;
+   top: 0px;
+   left: 0px;
+  /*------------------*/
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#page #globalNaviScroll .scrollDetail {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#globalNaviScroll .scrollDetail:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#globalNaviScroll .scrollDetail .scrollTitle {
+  float: left;
+  margin-top: 2px;
+}
+
+#globalNaviScroll .scrollDetail .scrollRight {
+  margin: 0 0 0 auto;
+  float: right;
+}
+
+#globalNaviScroll .scrollDetail .scrollTel {
+  width: 360px;
+  float: left;
+}
+
+#globalNaviScroll .scrollDetail .scrollTel:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#globalNaviScroll .scrollDetail .scrollTel img {
+  padding-right: 10px;
+  float: left;
+}
+
+#globalNaviScroll .scrollDetail .scrollTel p {
+  font-size: 11px;
+  color: #8d959c;
+  margin: 0;
+  padding-top: 3px;
+  float: left;
+}
+
+#globalNaviScroll .scrollDetail .scrollContact {
+  float: left;
+}
+
+#globalNaviScroll .scrollDetail .scrollContact:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#globalNaviScroll .scrollDetail .scrollContact p {
+  text-align: center;
+  margin: 0;
+  padding-left: 10px;
+  width: 170px;
+  background-image: url(../../img/icon_arrow01_right_blue01.png);
+  background-repeat: no-repeat;
+  background-size: 5px 9px;
+  background-position: right 11px bottom 48%;
+  float: left;
+}
+
+#globalNaviScroll .scrollDetail .scrollContact p a {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  color: #1f286f;
+  margin: 0;
+  padding: 9px 10px 8px;
+  border: solid 1px #000066;
+}
+
+#globalNaviScroll .scrollDetail .scrollContact p a:hover {
+  color: #FFFFFF;
+  background-color: #1f286f;
+  background-image: url(../../img/icon_arrow01_right_white01.png);
+  background-repeat: no-repeat;
+  background-size: 5px 9px;
+  background-position: right 11px bottom 48%;
+}
 /* グローバルナビ */
 
 
