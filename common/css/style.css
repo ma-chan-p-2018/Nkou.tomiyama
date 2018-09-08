@@ -814,6 +814,7 @@ img {
 /*news*/
 
 #pageFoot .news {
+  font-family: "AxisStd-Regular", sans-serif;
   position: relative;
   max-width: 1060px;
   margin: 0 auto;
@@ -946,13 +947,14 @@ img {
 
 #pageFoot .footMassage {
   margin-top: 20px;
-  padding: 16px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.03);
   text-align: left;
+  border: solid 1px rgb(232, 232, 232);
 }
 
 #pageFoot .footMassage h5 {
-  margin-bottom: 5px;
+  margin: 0 0 5px 0;
   padding: 0;
   color: #777;
   font-size: 12px;
@@ -961,4 +963,41 @@ img {
 #pageFoot .footMassage p {
   color: #888888;
   font-size: 10px;
+  text-align: justify;
+}
+
+
+/* footSmall */
+
+#pageFoot .footSmall {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: #999999;
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+#pageFoot .footSmallDetail {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 18px 10px 16px;
+}
+
+#pageFoot .footSmallDetail:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footSmallDetail p {
+  margin: 0;
+  padding: 0;
+}
+
+#pageFoot .footSmallDetail p:first-of-type {
+  float: left;
+}
+
+#pageFoot .footSmallDetail p:last-of-type {
+  float: right;
 }
