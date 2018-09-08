@@ -33,7 +33,7 @@
       navBox.hide();
 
       // 表示を開始するスクロール量を設定(px)
-      var TargetPos = 235;
+      var TargetPos = 168;
 
       // スクロールされた際に実行
       $(window).scroll( function() {
@@ -42,11 +42,11 @@
          // 現在のスクロール位置と、目的のスクロール位置を比較
          if( ScrollPos > TargetPos ) {
             // 表示(フェイドイン)
-            navBox.fadeIn();
+            navBox.slideDown(100);
          }
          else {
             // 非表示(フェイドアウト)
-            navBox.fadeOut();
+            navBox.slideUp(100);
          }
       });
    });
@@ -346,36 +346,34 @@
 
         <div class="footLinkDetail">
           <section class="footLink">
-            <ul>
+            <ul class="link">
               <li><a href="">個人情報保護方針</a></li>
               <li><a href="">学校法人概要</a></li>
             </ul>
 
-            <div class="sns">
-              <div>
+            <ul class="footSns">
+              <li>
                 <a href="">
                   <img src="img/icon_twitter01.png" alt="" width="27" height="27">
                   <p>N高等学校公式<br>
                   twitter</p>
                 </a>
-              </div>
-
-              <div>
+              </li>
+              <li>
                 <a href="">
                   <img src="img/icon_facebook01.png" alt="" width="27" height="27">
                   <p>N高等学校公式<br>
                   facebook</p>
                 </a>
-              </div>
-
-              <div>
+              </li>
+              <li class="width190">
                 <a href="">
                   <img src="img/icon_youtube01.png" alt="" width="27" height="27">
                   <p>N高等学校公式<br>
                   YouTubeチャンネル</p>
                 </a>
-              </div>
-            </div><!-- /.sns -->
+              </li>
+            </ul><!-- footSns -->
           </section><!-- /.footLink -->
         </div><!-- /.footLinkDetail -->
 

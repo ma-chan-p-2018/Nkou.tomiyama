@@ -369,7 +369,10 @@ img {
   /*------------------*/
     width: 100%;
     text-align: left;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.90);
+
+    /*一番上の階層に表示*/
+    z-index: 1;
 }
 
 #page #globalNaviScroll .scrollDetail {
@@ -462,19 +465,25 @@ img {
   background-position: right 11px bottom 48%;
 }
 
-/* ページボディ */
+
+
+/* ----- pagebody ----- */
+
 #pageBody {
   padding-bottom: 30px;
 }
 
-/* メインビジュアル */
+
+/* mainVisual */
 #pageBody #pageBodyMain .mainVisual {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* サブビジュアル */
+
+/* subVisual */
+
 #pageBody .subVisual {
   max-width: 1440px;
   padding: 0 20px;
@@ -565,6 +574,7 @@ img {
 
 #pageBody .subVisual .subItem a:hover {
   background: rgba(255,255,255,0.5);
+  text-decoration: none;
 }
 
 /* massage */
@@ -729,7 +739,7 @@ img {
   clear: both;
 }
 
-#pageFoot .footLinkDetail .footLink ul {
+#pageFoot .footLinkDetail .footLink ul.link {
   padding: 15px 0;
   margin: 0;
   float: left;
@@ -755,40 +765,52 @@ img {
   font-size: 14px;
 }
 
-#pageFoot .footLinkDetail .footLink .sns {
+#pageFoot .footLinkDetail .footLink ul.footSns {
+  margin: 0;
   float: right;
 }
 
-#pageFoot .footLinkDetail .footLink .sns:after {
+#pageFoot .footLinkDetail .footLink ul.footSns:after {
   content: "";
   display: block;
   clear: both;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div {
-  font-size: 12px;
+#pageFoot .footLinkDetail .footLink ul.footSns li {
   border-right: solid 1px #c9c9c9;
+  box-sizing: border-box;
   padding: 10px;
+  margin: 0;
+  width: 155px;
   float: left;
   position: relative;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div:last-child {
+#pageFoot .footLinkDetail .footLink ul.footSns li:last-child {
   border-right: none;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div:after {
+#pageFoot .footLinkDetail .footLink ul.footSns li:after {
   content: "";
   display: block;
   clear: both;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div a {
-
-  padding: 10px;
+#pageFoot .footLinkDetail .footLink ul.footSns li a {
+  font-size: 12px;
+  box-sizing: border-box;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div a:after {
+#pageFoot .footLinkDetail .footLink ul.footSns li:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#pageFoot .footLinkDetail .footLink ul.footSns .width190 {
+  box-sizing: border-box;
+  width: 190px;
+}
+
+#pageFoot .footLinkDetail .footLink ul.footSns li a:after {
   position: absolute;
   content: "＞";
   font-size: 10px;
@@ -797,13 +819,13 @@ img {
   color: #aaa;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div img {
+#pageFoot .footLinkDetail .footLink ul.footSns li img {
   vertical-align: bottom;
   padding-right: 5px;
   float: left;
 }
 
-#pageFoot .footLinkDetail .footLink .sns div p {
+#pageFoot .footLinkDetail .footLink ul.footSns li p {
   padding: 0;
   margin: 0;
   text-align: left;
