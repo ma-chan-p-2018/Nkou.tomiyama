@@ -57,14 +57,17 @@ img {
   text-align: center;
 }
 
-/* ------  ヘッダー  ------ */
+
+/* ------ header ------ */
+
 #pageHead {
   font-family: "AxisStd-Regular",sans-serif;
   letter-spacing: 0.4pt;
   font-size: 12px;
 }
 
-/* localNavi */
+
+/*localNavi*/
 #pageHead .localNaviDetail {
   width: 100%;
   background-color: #f7f7f7;
@@ -154,8 +157,9 @@ img {
   color: #000066;
 }
 
-/* headMenu */
-/*--top--*/
+
+/*-- headMenu --*/
+/*headmenu-top*/
 #headMenu .headMenuTop {
   padding: 20px 0;
 }
@@ -227,7 +231,9 @@ img {
   margin: 0;
 }
 
-/*--bottom--*/
+
+/*headmenu-bottom*/
+
 #headMenu .headMenuBottom {
   margin-bottom: 16px;
 }
@@ -353,8 +359,12 @@ img {
   background-size: 90px 20px;
   background-image: url(../../img/global_nav_btn01_04.png);
 }
-#headMenu .headMenuBottom .globalNavi ul a,
-#headMenu .headMenuBottom .globalNavi ul a span:hover {
+
+#headMenu .headMenuBottom .globalNavi ul a:hover {
+  text-decoration: none;
+}
+
+#headMenu .headMenuBottom .globalNavi ul li a:hover  span {
   background-position: 0 -10px;
 }
 
@@ -509,6 +519,8 @@ img {
   position: relative;
 }
 
+
+
 #pageBody .subVisual .subItem:nth-of-type(2) {
   background-image: url(../../img/home_contents_info01_06.jpg);
 }
@@ -577,6 +589,7 @@ img {
   text-decoration: none;
 }
 
+
 /* massage */
 #pageBodyMain .massage {
   margin-top: 50px;
@@ -606,6 +619,7 @@ img {
   max-width: 1060px;
   margin: 0 auto;
   padding: 60px 10px 0;
+  font-size: 0;
 }
 
 #pageFoot .footDetail .pageTop {
@@ -658,6 +672,7 @@ img {
 
 #pageFoot .footNav ul li a {
   color: #000066;
+  padding: 0;
 }
 
 /*footMenu*/
@@ -689,6 +704,7 @@ img {
 
 #pageFoot .footMenu section h4 {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 #pageFoot .footMenu section h4 a {
@@ -777,7 +793,7 @@ img {
 }
 
 #pageFoot .footLinkDetail .footLink ul.footSns li {
-  border-right: solid 1px #c9c9c9;
+  border-right: solid 1px rgb(221, 221, 221);
   box-sizing: border-box;
   padding: 10px;
   margin: 0;
@@ -1020,6 +1036,19 @@ img {
   float: left;
 }
 
+#pageFoot .footSmallDetail p:first-of-type a {
+  color: #999999;
+}
+
 #pageFoot .footSmallDetail p:last-of-type {
   float: right;
+  font-size: 13px;
+}
+
+#pageFoot .footSmallDetail p:last-of-type span:first-of-type {
+  font-size: 190%;
+}
+
+#pageFoot .footSmallDetail p:last-of-type span:last-of-type {
+  vertical-align: super;
 }
