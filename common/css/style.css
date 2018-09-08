@@ -77,6 +77,7 @@ img {
 #pageHead section {
   padding: 0 10px;
   max-width: 1060px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -387,6 +388,7 @@ img {
 
 #page #globalNaviScroll .scrollDetail {
   max-width: 1060px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 10px;
 }
@@ -617,6 +619,7 @@ img {
 #pageFoot .footDetail {
   position: relative;
   max-width: 1060px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 60px 10px 0;
   font-size: 0;
@@ -694,7 +697,7 @@ img {
   float: left;
 }
 
-#pageFoot .footMenu section:first-child {
+#pageFoot .footMenu section .margin-22 {
   margin-top: -22px;
 }
 
@@ -703,7 +706,7 @@ img {
 }
 
 #pageFoot .footMenu section h4 {
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   font-size: 16px;
 }
 
@@ -729,7 +732,8 @@ img {
 
 #pageFoot .footMenu section ul li a {
   letter-spacing: 0.4pt;
-  font-size: 16px;
+  padding: 0;
+  font-size: 14px;
 }
 
 #pageFoot .footMenu section ul.menuBorder {
@@ -855,8 +859,9 @@ img {
   font-family: "AxisStd-Regular", sans-serif;
   position: relative;
   max-width: 1060px;
-  margin: 0 auto;
-  padding: 0 10px 30px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   border-top:  solid 1px #c9c9c9;
   text-align: left;
 }
@@ -899,6 +904,7 @@ img {
   top: 25px;
   width: 145px;
   font-size: 14px;
+  margin:0;
 }
 
 #pageFoot .btn a {
@@ -1017,6 +1023,7 @@ img {
 
 #pageFoot .footSmallDetail {
   max-width: 1060px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 18px 10px 16px;
 }
