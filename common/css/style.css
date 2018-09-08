@@ -17,6 +17,10 @@ a:visited {
     outline: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -79,6 +83,11 @@ img {
   clear: both;
 }
 
+#pageHead section .localNavi h2 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
 #pageHead section .localNavi .navTitle {
   float: left;
   font-weight: bold;
@@ -98,7 +107,6 @@ img {
 
 #pageHead section .localNavi ul a:hover {
   color: #676767;
-  text-decoration: underline;
 }
 
 #pageHead section .localNavi ul:after {
@@ -160,6 +168,11 @@ img {
 
 #headMenu .headMenuTop .headMenuTitle {
   float: left;
+}
+
+#headMenu .headMenuTop .headMenuTitle h1 {
+  padding: 0;
+  margin: 0;
 }
 
 #headMenu .headMenuTop .headMenuRight {
@@ -264,6 +277,7 @@ img {
 
 #headMenu .headMenuBottom ul.contact li a:hover {
   color: #FFFFFF;
+  text-decoration: none;
   background-color: #1f286f;
   background-image: url(../../img/icon_arrow01_right_white01.png);
   background-repeat: no-repeat;
@@ -346,9 +360,6 @@ img {
 
 
 /* 上部固定グローバルナビ */
-#page {
-
-}
 
 #page #globalNaviScroll {
    /* ▼上端に固定するCSS */
@@ -358,7 +369,7 @@ img {
   /*------------------*/
     width: 100%;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
 }
 
 #page #globalNaviScroll .scrollDetail {
@@ -452,7 +463,9 @@ img {
 }
 
 /* ページボディ */
-
+#pageBody {
+  padding-bottom: 30px;
+}
 
 /* メインビジュアル */
 #pageBody #pageBodyMain .mainVisual {
@@ -554,4 +567,398 @@ img {
   background: rgba(255,255,255,0.5);
 }
 
-/* フッター */
+/* massage */
+#pageBodyMain .massage {
+  margin-top: 50px;
+}
+
+#pageBodyMain .massage p {
+  margin:0;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+#pageBodyMain .massage p:last-child {
+  margin-bottom: 20px;
+}
+
+/*----- フッター -----*/
+#pageFoot {
+  background-color: rgb(248, 248, 248);
+}
+
+#pageFoot .footDetail {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 60px 10px 0;
+}
+
+#pageFoot .footDetail .pageTop {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 88%;
+  top: 35px;
+}
+
+#pageFoot .footDetail .pageTop:hover {
+  opacity: 0.7;
+}
+
+
+/*footNav*/
+#pageFoot .footNav {
+  margin-bottom: 70px;
+}
+
+#pageFoot .footNav ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#pageFoot .footNav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footNav ul li {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.0;
+  border-left: solid 1px #000066;
+  margin: 0 0 0 12px;
+  padding: 0 0 1px 12px;
+  float: left;
+}
+
+#pageFoot .footNav ul li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+
+#pageFoot .footNav ul li a {
+  color: #000066;
+}
+
+/*footMenu*/
+#pageFoot .footMenu {
+  margin-bottom: 40px;
+}
+
+#pageFoot .footMenu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footMenu section {
+  font-family: "AxisStd-Light", sans-serif;
+  text-align: left;
+  width: 18.46%;
+  margin: 0 1.923% 0 0;
+  float: left;
+}
+
+#pageFoot .footMenu section:first-child {
+  margin-top: -22px;
+}
+
+#pageFoot .footMenu section:last-child {
+  margin: 0;
+}
+
+#pageFoot .footMenu section h4 {
+  margin-bottom: 10px;
+}
+
+#pageFoot .footMenu section h4 a {
+  color: #000066;
+  letter-spacing: 0.4pt;
+  margin: 0;
+  padding: 0;
+}
+
+#pageFoot .footMenu section h4 span {
+  font-size: 11px;
+}
+
+#pageFoot .footMenu section ul {
+  margin: 0;
+  padding: 0;
+}
+
+#pageFoot .footMenu section ul li {
+  margin-bottom: 10px;
+}
+
+#pageFoot .footMenu section ul li a {
+  letter-spacing: 0.4pt;
+  font-size: 16px;
+}
+
+#pageFoot .footMenu section ul.menuBorder {
+  margin-top: 18px;
+  padding-top: 22px;
+  border-top: solid 1px #c9c9c9;
+}
+
+/* footLink */
+#pageFoot .footLinkDetail {
+  padding: 20px 0px 25px 0;
+  margin: 0;
+  border-top:  solid 1px #c9c9c9;
+}
+
+#pageFoot .footLinkDetail .footLink {
+  padding:  0;
+}
+
+#pageFoot .footLinkDetail .footLink:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footLinkDetail .footLink ul {
+  padding: 15px 0;
+  margin: 0;
+  float: left;
+}
+
+#pageFoot .footLinkDetail .footLink ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footLinkDetail .footLink ul li {
+  margin-right: 10px;
+  padding: 0;
+  float: left;
+}
+
+#pageFoot .footLinkDetail .footLink ul li:last-child {
+  margin: 0;
+}
+
+#pageFoot .footLinkDetail .footLink ul li a {
+  font-size: 14px;
+}
+
+#pageFoot .footLinkDetail .footLink .sns {
+  float: right;
+}
+
+#pageFoot .footLinkDetail .footLink .sns:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div {
+  font-size: 12px;
+  border-right: solid 1px #c9c9c9;
+  padding: 10px;
+  float: left;
+  position: relative;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div:last-child {
+  border-right: none;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div a {
+
+  padding: 10px;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div a:after {
+  position: absolute;
+  content: "＞";
+  font-size: 10px;
+  right: 7px;
+  top: 16px;
+  color: #aaa;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div img {
+  vertical-align: bottom;
+  padding-right: 5px;
+  float: left;
+}
+
+#pageFoot .footLinkDetail .footLink .sns div p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  float: left;
+}
+
+
+/*news*/
+
+#pageFoot .news {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 10px 30px;
+  border-top:  solid 1px #c9c9c9;
+  text-align: left;
+}
+
+#pageFoot .blog {
+  position: relative;
+  text-align: left;
+}
+
+#pageFoot h4 span {
+  margin-left:4px;
+  font-size: 12px;
+  font-weight: normal;
+  color: inherit;
+}
+
+#pageFoot h4 span img {
+  height: 11px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+#pageFoot .blog h4 span img {
+  height: 14px;
+}
+
+#pageFoot .news h4,
+#pageFoot .blog h4 {
+  margin: 0 0 35px;
+  padding: 30px 0 0;
+  color: #000066;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+}
+
+#pageFoot .btn {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 145px;
+  font-size: 14px;
+}
+
+#pageFoot .btn a {
+  text-align: center;
+  color: #1f286f;
+  display: block;
+  padding: 9px 10px 8px;
+  border: solid 1px #000066;
+  background-image: url(../../img/icon_arrow01_right_blue01.png);
+  background-repeat: no-repeat;
+  background-size: 5px 9px;
+  background-position: right 11px bottom 50%;
+}
+
+#pageFoot .btn a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #1f286f;
+  background-image: url(../../img/icon_arrow01_right_white01.png);
+  background-repeat: no-repeat;
+  background-size: 5px 9px;
+  background-position: right 11px bottom 50%;
+}
+
+#pageFoot .news .newsItem ul,
+#pageFoot .blog .blogItem ul {
+  margin: 0;
+  padding: 0;
+}
+
+#pageFoot .news .newsItem ul:after,
+#pageFoot .blog .blogItem ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#pageFoot .news .newsItem ul li,
+#pageFoot .blog .blogItem ul li {
+  padding: 0;
+  margin: 0;
+  width: 47.5%;
+  margin: 0 5% 10px 0;
+  border-bottom: dashed 1px #c6c6c6;
+  float: left;
+}
+
+#pageFoot .news .newsItem ul li:nth-of-type(2),
+#pageFoot .blog .blogItem ul li:nth-of-type(2) {
+  margin-right: 0;
+}
+
+#pageFoot .news ul li p,
+#pageFoot .blog ul li p {
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+#pageFoot ul li time {
+
+  color: #727272;
+  font-size: 12px;
+}
+
+#pageFoot ul li a {
+  padding-bottom: 5px;
+  font-size: 16px;
+  letter-spacing: 0.4pt;
+  display: block;
+}
+
+#pageFoot ul li p span {
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: #1f286f;
+  color: #ffffff;
+}
+
+
+/* footMassage */
+
+#pageFoot .footMassage {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.03);
+  text-align: left;
+}
+
+#pageFoot .footMassage h5 {
+  margin-bottom: 5px;
+  padding: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+#pageFoot .footMassage p {
+  color: #888888;
+  font-size: 10px;
+}
