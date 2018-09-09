@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP');
+
+
+@font-face
+{
+font-family: ロゴたいぷゴシック;
+src: url('https://cdn.leafscape.be/logotype/logotype_web.woff2')
+     format("woff2");
+}
+
+
 body {
     margin: 0;
     padding: 0;
     background: #ffffff;
     color: #272727;
     line-height: 1.4;
+    font-family: 'Noto Sans JP','Noto Serif JP','ロゴたいぷゴシック',sans-serif;
 }
 
 ul{
@@ -26,32 +38,8 @@ img {
     vertical-align: bottom;
 }
 
-/* フォント */
 
-@font-face {
-    font-family: "AxisStd-UltraLight";
-    src: url("https://nnn.ed.jp/assets/fonts/a9052c68-9f8f-4738-b7b3-28b7b4074c0e.eot?#iefix");
-    src: url("https://nnn.ed.jp/assets/fonts/a9052c68-9f8f-4738-b7b3-28b7b4074c0e.eot?#iefix") format("eot"), url("https://nnn.ed.jp/assets/fonts/9debccc6-f756-4d46-a835-ac342ddbcaf0.woff2") format("woff2"), url("https://nnn.ed.jp/assets/fonts/726b29c5-dc24-49d5-a06e-107b62843f0b.woff") format("woff"), url("https://nnn.ed.jp/assets/fonts/fcf3fe94-ef76-4736-8626-e84ee1a9ba39.ttf") format("truetype"), url("https://nnn.ed.jp/assets/fonts/3d6f6af4-77aa-4896-b039-94e43492d9c6.svg#3d6f6af4-77aa-4896-b039-94e43492d9c6") format("svg");
-}
-@font-face {
-    font-family: "AxisStd-ExtraLight";
-    src: url("https://nnn.ed.jp/assets/fonts/cae76507-fde0-48d2-8060-f95b67662772.eot?#iefix");
-    src: url("https://nnn.ed.jp/assets/fonts/cae76507-fde0-48d2-8060-f95b67662772.eot?#iefix") format("eot"), url("https://nnn.ed.jp/assets/fonts/9adc0413-55bd-4001-9bc0-f823476aa22e.woff2") format("woff2"), url("https://nnn.ed.jp/assets/fonts/25516da4-2e65-456a-bc9c-cc6960f6c384.woff") format("woff"), url("https://nnn.ed.jp/assets/fonts/8c439ac8-83ef-4635-a477-df9c64f97b62.ttf") format("truetype"), url("https://nnn.ed.jp/assets/fonts/93d1f11a-903e-4293-a2f1-cd55b87b5087.svg#93d1f11a-903e-4293-a2f1-cd55b87b5087") format("svg");
-}
-
-@font-face {
-    font-family: "AxisStd-Light";
-    src: url("https://nnn.ed.jp/assets/fonts/aa7c9f5f-bd2d-4fbb-a4a5-82ba2cd0189c.eot?#iefix");
-    src: url("https://nnn.ed.jp/assets/fonts/aa7c9f5f-bd2d-4fbb-a4a5-82ba2cd0189c.eot?#iefix") format("eot"), url("https://nnn.ed.jp/assets/fonts/ca94208f-21dd-4dc8-ab7c-057d8dbfcccb.woff2") format("woff2"), url("https://nnn.ed.jp/assets/fonts/18820f9e-d51e-43be-9d0f-e510d9d1878a.woff") format("woff"), url("https://nnn.ed.jp/assets/fonts/cb3a3886-7dec-420d-bf42-698737ce3561.ttf") format("truetype"), url("https://nnn.ed.jp/assets/fonts/9bdde1f9-7637-4fa1-994d-2f2ad4929b1f.svg#9bdde1f9-7637-4fa1-994d-2f2ad4929b1f") format("svg");
-}
-@font-face {
-    font-family: "AxisStd-Regular";
-    src: url("https://nnn.ed.jp/assets/fonts/7e908add-1f72-4926-8e0d-33613fad3a87.eot?#iefix");
-    src: url("https://nnn.ed.jp/assets/fonts/7e908add-1f72-4926-8e0d-33613fad3a87.eot?#iefix") format("eot"), url("https://nnn.ed.jp/assets/fonts/d226afef-6536-4b18-9b28-defffcc4baae.woff2") format("woff2"), url("https://nnn.ed.jp/assets/fonts/6e9eb620-9339-4b2e-bb9b-d514def96de7.woff") format("woff"), url("https://nnn.ed.jp/assets/fonts/a71ba532-858c-440c-8abd-e89a2ae8efea.ttf") format("truetype"), url("https://nnn.ed.jp/assets/fonts/5d948218-1de1-4508-b1a6-fe03ccced886.svg#5d948218-1de1-4508-b1a6-fe03ccced886") format("svg");
-}
-
-
-
+/*----- page -----*/
 #page {
   margin: 0 auto;
   text-align: center;
@@ -61,7 +49,6 @@ img {
 /* ------ header ------ */
 
 #pageHead {
-  font-family: "AxisStd-Regular",sans-serif;
   letter-spacing: 0.4pt;
   font-size: 12px;
 }
@@ -559,7 +546,6 @@ img {
   font-size: 13px;
   margin: 0  0 5px;
   text-align: center;
-  font-family: "AxisStd-Light", sans-serif;
 }
 
 #pageBody .subVisual .subItem .readMoreImg {
@@ -690,7 +676,6 @@ img {
 }
 
 #pageFoot .footMenu section {
-  font-family: "AxisStd-Light", sans-serif;
   text-align: left;
   width: 18.46%;
   margin: 0 1.923% 0 0;
@@ -706,7 +691,7 @@ img {
 }
 
 #pageFoot .footMenu section h4 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px ;
   font-size: 16px;
 }
 
@@ -856,7 +841,6 @@ img {
 /*news*/
 
 #pageFoot .news {
-  font-family: "AxisStd-Regular", sans-serif;
   position: relative;
   max-width: 1060px;
   box-sizing: border-box;
